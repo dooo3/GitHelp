@@ -1,0 +1,17 @@
+testBranch에 적용한것을 master에 push하는거랑
+
+
+
+명령어 ex) git push testtest testBranch:master  //testBranch에 것을 master로 push
+
+##git push <remote> <local branch name>:<remote branch to push into>
+
+
+
+testBranch에 master의 파일을 pull하는것
+
+
+branch master로 바꾸는법
+
+git checkout master
+##git checkout origin

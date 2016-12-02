@@ -1,0 +1,13 @@
+실험할꺼
+
+git pull 하는 방법~~
+
+아래와 같이 pull 하기전에 reset 옵션을 주고 --hard HEAD를 
+인자로 넘겨주게 되면 워킹트리 전체를 마지막 Commit 상태로 
+되돌리게 됩니다. 그러면서 자연스럽게 문제가 되었던 부분들이 
+사라지게 되었네요.
+
+
+
+#> git reset --hard HEAD
+#> git pull
