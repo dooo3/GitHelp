@@ -1,0 +1,23 @@
+gitgub 에러 처리
+
+error 1:
+fatal the current branch master has no upstream branch
+
+해결:
+git push -u origin master
+
+( -u 옵션에 관해서)
+-u
+--set-upstream
+For every branch that is up to date or successfully pushed, add upstream (tracking) reference, used by argument-less git-pull(1) and other commands. For more information, see branch.<name>.merge in git-config(1).
+
+
+
+error 2:
+remote origin already exists
+
+해결:
+
+여기서 말하는 origin이라는게 파일이름? 같은 느낌이다
+이미 존재하니까 다른 origin(ex]testtest,goldtest) 등으로 
+다시 만들어서 하자
