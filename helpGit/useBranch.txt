@@ -13,5 +13,6 @@ testBranch에 master의 파일을 pull하는것
 
 branch master로 바꾸는법
 
+//checkout하면 자동으로 pull해서 서버에 있는것을 로컬에 받아오네!!
 git checkout master
 ##git checkout origin
