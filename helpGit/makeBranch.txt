@@ -8,3 +8,7 @@
 3.git push <remote-name> <local-branch-name>:<remote-branch-name>
 
 
+
+
+//추적 브랜치가 현재 어떻게 설정되어 있는지 확인
+4. git branch -vv로 현상태 확인

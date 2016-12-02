@@ -46,7 +46,9 @@ ex) git remote add origin https://github.com/username/myproject.git
 
 ###중요 간단히 말하면 origin이 부분이 파일이름?이라고 생각하면 됨(ex)testtest,goldtest)뭐 이런식으로 저장가능
 
-tip git remote -v로 어떤 저장소가 있는지 확인 할 수있다.
+tip 
+
+git remote -v로 어떤 저장소가 있는지 확인 할 수있다.
 
 
 
