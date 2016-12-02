@@ -29,7 +29,10 @@ error 3:failed to push some refs to 'https://github.com/dooo3/MyProject'
 
 hint:Updates were rejected because the tip of your current branch is behind
 
-해결:
+해결:..?어쩌다가 push에 -f옵션주고 보냇다가 다시 처음부터 커밋하고 push하니까 성공함;;
+
+나중에 다시 알아봐야할듯...
+
 
 
 
