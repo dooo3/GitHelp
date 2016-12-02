@@ -1,0 +1,26 @@
+First, you create your branch locally:
+
+명령어 ex) git checkout -b testBranch
+##git checkout -b <branch-name>
+
+The remote branch is automatically created when you push 
+it to the remote server. So when you feel ready for it, 
+you can just do:
+
+명령어 ex) git push testtest testBranch
+##git push <remote-name> <branch-name>
+
+Where <remote-name> is typically origin, 
+the name which git gives to the remote you cloned from. 
+Your colleagues would then just pull that branch, 
+and it's automatically created locally.
+
+
+로컬이랑 리모트랑 같은 이름을 안쓰면 remote쪽이 삭제됨
+##git push <remote-name> <local-branch-name>:<remote-branch-name>
+
+
+So that a subsequent git pull will know what to do, you might instead want to use:
+
+명령어
+##git push -u <remote-name> <local-branch-name>

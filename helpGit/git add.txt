@@ -1,0 +1,3 @@
+directory를 add 할때는
+
+git add <folder>/* 명령어를 사용하면 됨
