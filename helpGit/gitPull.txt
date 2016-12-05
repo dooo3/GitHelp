@@ -11,3 +11,9 @@ git pull 하는 방법~~
 
 #> git reset --hard HEAD
 #> git pull
+
+
+
+//다른 상대방의 자료를 받을때
+
+git pull <remote 이름> <branch 이름>

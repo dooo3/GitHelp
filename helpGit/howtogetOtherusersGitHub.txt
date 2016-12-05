@@ -1,0 +1,10 @@
+
+1.git config user.name <??>  ??에 상대방 이름 넣는건 해봤지만 내이름은 안넣어봄 실행은 됨
+
+2.git config user.email <??> ??에 그냥 내 이메일 넣어서 했는데 됫음;
+
+3.remote를 잡아준다 특정인 repository의 url을 이용해서 만듬 (그래도 로컬 디렉터리의 이름은 통일해야됨)
+
+4.git pull <지정한 remote 이름> <branch 이름>
+
+완료
