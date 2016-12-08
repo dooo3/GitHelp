@@ -1,0 +1,28 @@
+0. root로그인 
+ 
+1. 압축풀기 
+unxz node-v4.4.3-linux-x86.tar.xz 
+tar xf node-v4.4.3-linux-x86.tar 
+chown -R root:root node-v4.4.3-linux-x86 
+ 
+2. /usr/local 로 이동 
+mkdir /usr/local/node 
+ 
+mv ,,/node-v4.4.3-linux-x86/* /usr/local/node/ 
+ 
+3. path 지정 
+vi ~/.bashrc		이거랑 
+vi /home/user/.bashrc	이거 
+ 
+맨밑에 추가 
+export PATH="/usr/local/node/bin:$PATH" 
+ 
+4. path 로드 
+$ source .bashrc 
+ 
+ 
+확인 
+node -v 
+
+
+자동으로 서버를 올려주는? ###forever검색~ ###
