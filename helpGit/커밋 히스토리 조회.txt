@@ -1,0 +1,63 @@
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+커밋 히스토리 조회
+
+git log
+
+    first commit
+
+
+특별한 아규먼트 없이 git log 명령을 실행하면 저장소의 커밋 히스토리를 시간순으로 보여준다. 
+즉, 가장 최근의 커밋이 가장 먼저 나온다. 그리고 이어서 각 커밋의 SHA-1 체크섬, 저자 이름, 저자 이메일, 커밋한 날짜, 
+커밋 메시지를 보여준다.
+
+원하는 히스토리를 검색할 수 있도록 git log 명령은 매우 다양한 옵션을 지원한다. 
+
+여기에서는 자주 사용하는 옵션을 설명한다.
+
+-p가 가장 유용한 옵션 중 하나다. -p는 각 커밋의 diff 결과를 보여준다. 
+
+게다가 -2는 최근 두 개의 결과만 보여주는 옵션이다:
+
+가장 재밌는 옵션은 format 옵션이다. 나만의 포맷으로 결과를 출력하고 싶을 때 사용한다. 특히 결과를 다른 프로그램으로 파싱하고자 할 때
+ 유용하다. 이 옵션을 사용하면 포맷을 정확하게 일치시킬 수 있기 때문에 Git을 새 버전으로 바꿔도 결과 포맷이 바뀌지 않는다:
+
+ex)
+
+$ git log --pretty=format:"%h - %an, %ar : %s"
+ca82a6d - Scott Chacon, 11 months ago : changed the version number
+085bb3b - Scott Chacon, 11 months ago : removed unnecessary test code
+a11bef0 - Scott Chacon, 11 months ago : first commit
+
+
+반면 --since나 --until같은 시간을 기준으로 조회하는 옵션은 매우 유용하다. 
+
+-(n) 최근 n 개의 커밋만 조회한다. 
+--since, --after 명시한 날짜 이후의 커밋만 검색한다. 
+--until, --before 명시한 날짜 이전의 커밋만 조회한다. 
+--author 입력한 저자의 커밋만 보여준다. 
+--committer 입력한 커미터의 커밋만 보여준다. 
+
+지난 2주 동안 만들어진 커밋들만 조회하는 명령은 아래와 같다
+
+ $ git log --since=2.weeks
+
+이 옵션은 다양한 형식을 지원한다. 
+2008-01-15같이 정확한 날짜도 사용할 수 있고 2 years 1 day 3 minutes ago같이 상대적인 기간을 사용할 수도 있다.
+
+
+아래 예제는 2008년 10월에 Junio Hamano가 커밋한 히스토리를 조회하는 것이다. 
+
+그 중에서 테스트 파일을 수정한 커밋 중에서 머지 커밋이 아닌 것들만 조회한다:
+
+$ git log --pretty="%h - %s" --author=gitster --since="2008-10-01" \
+   --before="2008-11-01" --no-merges -- t/
+5610e3b - Fix testcase failure when extended attribute
+acd3b9e - Enhance hold_lock_file_for_{update,append}()
+f563754 - demonstrate breakage of detached checkout wi
+d1a43f2 - reset --hard/read-tree --reset -u: remove un
+51a94af - Fix "checkout --track -b newbranch" on detac
+b0ad11e - pull: allow "git pull origin $something:$cur
+
+
