@@ -1,3 +1,8 @@
+
+하위 파일까지 다 하고 싶으면
+
+git add* 하면 디렉터리고 뭐고 밑에 존재하는 모든 파일을 commit한다.
+
 directory를 add 할때는
 
 git add <folder>/* 명령어를 사용하면 됨
