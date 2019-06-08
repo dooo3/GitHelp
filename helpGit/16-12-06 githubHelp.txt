@@ -49,6 +49,21 @@ git 간편 안내서: http://rogerdudler.github.com/git-guide/index.ko.html
 
 
 /////////////////////////////////////////////////////////////////////////////////////////
+기존 리포지토리 깔끔하게 pull/push
+
+	git pull
+	git add .
+	git commit -m "clean push"
+	git push
+
+기존 리포지토리 remote 제거
+
+git remote remove (저장한 이름) (ex origin)
+
+새리포지토리 remote 추가
+
+git remote add (원하는이름) (리포지토리 주소)
+/////////////////////////////////////////////////
 
 Commit
 
